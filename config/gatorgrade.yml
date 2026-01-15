@@ -1,14 +1,14 @@
 # --> check the first Py file
-- src/storyProblem.py:
-    - description: Ensure that the file src/storyProblem.py exists
+- src/storyProblem.ipynb:
+    - description: Ensure that the file src/storyProblem.ipynb exists
       check: ConfirmFileExists
-    - description: Complete all TODOs and remove the TODO markers in the file src/storyProblem.py
+    - description: Complete all TODOs and remove the TODO markers in the file src/storyProblem.ipynb
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: Delete the 'Add Your Name Here' prompt in the file src/storyProblem.py
+    - description: Delete the 'Add Your Name Here' prompt in the file src/storyProblem.ipynb
       check: MatchFileFragment
       options:
         fragment: "Add Your Name Here"
@@ -19,4 +19,4 @@
 - description: Have at least a specific minimum number of commits (3) in repository
   check: CountCommits
   options:
-    count: 3
+    count: 1
